@@ -1,0 +1,522 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  font-family: 'Piedra', cursive;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.brand{
+  display: flex;
+  font-size: 25px;
+  color:#00CCFF;
+  padding-left: 10px;
+}
+
+.b-h{
+  padding-left: 10px;
+  color:orange ;
+}
+
+.links{
+  display: flex;
+}
+
+#about,.signup{
+  padding-right: 30px;
+  font-size: 25px;
+}
+
+.links h4{
+  font-family: 'Montaga', serif;
+  border-bottom: 2px solid Transparent;
+  transition: border-bottom .5s;
+}
+.links a{
+  text-decoration: none;
+  color:orange;
+  transition: color .5s;
+}
+
+.links a:hover{
+  color:lightgrey;
+}
+
+.links h4:hover{
+  border-bottom:2px solid black;
+}
+
+.cloud-div{
+  width:100%;
+  height:250px;
+
+
+}
+.cloud-div div{
+  position: absolute;
+  height:70px;
+  animation: move 30s linear infinite;
+  left: -200px;
+  top:200px;
+  }
+
+
+.cloud-div div img{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+@keyframes move {
+  0%{left:-200px;}
+  100%{left:100%;}
+}
+
+.cloud-div div:nth-child(2){
+  animation-duration: 35s;
+  animation-delay: 3s;
+  top:150px;
+}
+
+.cloud-div div:nth-child(3){
+  animation-duration: 35s;
+  animation-delay: 7s;
+  top:170px;
+}
+
+
+.cloud-div div:nth-child(4){
+  animation-duration: 38s;
+  animation-delay: 10s;
+  top:194px;
+}
+
+.cloud-div div:nth-child(5){
+  animation-duration: 37s;
+  animation-delay: 11s;
+  top:270px;
+}
+
+.cloud-div div:nth-child(6){
+  animation-duration: 40s;
+  animation-delay: 20s;
+  top:255px;
+}
+
+.cloud-div div:nth-child(7){
+  animation-duration: 38s;
+  animation-delay: 23s;
+  top:200px;
+}
+
+.cloud-div div:nth-child(8){
+  animation-duration: 38s;
+  animation-delay: 26s;
+  top:260px;
+}
+
+.scene{
+  width:100%;
+  height:30%;
+}
+
+.tree{
+  height:87%;
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 5px;
+}
+
+.tree img{
+  max-width: 35%;
+  max-height: 100%;
+}
+
+.shop{
+  height: 35%;
+  width: 35%;
+  position: absolute;
+   right:0;
+  top: 450px;
+}
+
+.shop img{
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 15%;
+}
+
+.road{
+  width: 100%;
+  height:10%;
+  background: black;
+  position: absolute;
+  padding-top: 10px;
+
+}
+
+#quality{
+  margin-top:20px;
+  height:100%;
+  width:100%;
+}
+
+.top{
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 10%;
+  margin-left: 40%;
+  font-size:30px;
+  color:grey;
+}
+
+.back hr{
+  width: 15%;
+}
+
+.logo{
+  display: flex;
+  margin-top: 5%;
+}
+
+ .tech img{
+  width:200px;
+  height:200px;
+}
+
+.delivery img{
+  width:200px;
+  height:160px;
+}
+
+ .fresh img {
+   width:200px;
+ }
+.delivery{
+  margin-left: 10%;
+}
+
+ .fresh{
+  margin-left: 280px;
+
+}
+
+.tech{
+  margin-left: 350px;
+}
+
+.quotes{
+  display: flex;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 150%;
+  color: green;
+}
+
+.quotes div{
+  width:5
+}
+
+.s-quote{
+  margin-left: 12%;
+}
+
+.f-quote{
+  margin-left: 12%;
+
+}
+
+.t-quote{
+  margin-left: 14%;
+}
+
+#order{
+  width: 100%;
+  height: 550px;
+  margin-top: 7%;
+}
+
+.order-now{
+  width:225px;
+  height:225px;
+  margin-left: 44%;
+}
+
+footer{
+  width:100%;
+  height:10%;
+  margin-top: 17%;
+}
+
+.copyright{
+  width:100%;
+  height:100%;
+  background: black;
+  font-size: 23px;
+  text-align: center;
+  position: relative;
+  margin-top: 21.5%;
+}
+
+.copyright p{
+  color: white;
+}
+
+@media (max-width:1250px) and (min-width:770px) {
+
+.tree,.shop{
+  display: inline;
+}
+
+.road{
+  z-index: -1;
+  height:70px;
+}
+
+.shop img{
+  max-width: 75%;
+}
+
+.shop{
+  top:45%;
+  position: absolute;
+}
+
+.back hr{
+display: none;
+}
+
+.logo{
+  margin-top: 2%;
+}
+
+
+.delivery{
+  margin-left: 8%;
+}
+
+ .fresh{
+  margin-left: 19%;
+
+}
+
+.tech{
+  margin-left: 19%;
+  margin-right: 5%;
+}
+
+@media (max-width:1130px) {
+  .delivery{
+    margin-left: 5%;
+  }
+  .fresh{
+    margin-left: 15%;
+  }
+  .tech{
+    margin-left: 15%;
+  }
+
+  .f-quote{
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+  }
+
+  .s-quote,.t-quote{
+    text-align: center;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+ .quotes h2{
+   font-size: 30px;
+}
+}
+
+.pop-form{
+  display: none;
+  position: absolute;
+  top: 23%;
+  left:20%;
+  width: 60%;
+  height:70%;
+  background:#eb3349;
+  border-radius: 13px;
+  box-shadow:3px 3px 5px 6px #eb3349;
+}
+
+input,textarea{
+ margin: .9em auto;
+ font-family: inherit;
+ text-transform: inherit;
+ font-size: inherit;
+ border-radius: 10px;
+ display: block;
+ width: 560px;
+ padding: .4em;
+}
+
+.f-container textarea{
+  height: 80px;
+}
+
+.f-container{
+  margin-top: 9%;
+  height: 100%;
+}
+
+.pop-form h1{
+  text-align: center;
+  font-family: 'Architects Daughter', serif;
+}
+
+.f-container button{
+  margin-top:5% ;
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  display: block;
+  width: 25%;
+  height: 15%;
+  margin-left: 40%;
+  padding: .4em;
+}
+
+.formbtn,.formBtn {
+  width: 140px;
+  display: inline-block;
+  border-radius: 0px;
+  background: black;
+  color: white;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 35px;
+}
+
+.formbtn{
+  margin-left:35%;
+}
+
+.formbtn:hover{
+  background: lightgrey;
+  color:black;
+}
+
+.formBtn:hover{
+  background: lightgrey;
+  color:black;
+}
+
+
+
+.pi div{
+  margin-top: 10%;
+  margin-left: 10%;
+  width:350px;
+}
+
+.pi img{
+ border-bottom: 2px solid grey;
+ border-radius: 60px;
+}
+
+.berry img{
+  max-width: 100%;
+  max-height: 350px;
+}
+
+.apple img{
+  max-width: 350px;
+}
+
+.guvava img{
+max-width: 100%;
+border-radius: 60px;
+}
+
+.peache img{
+border-radius: 60px;
+  max-width: 100%;
+}
+
+.strawberry img{
+  max-width: 100%;
+  border-radius: 60px;
+}
+
+.melon img{
+  max-width:100%;
+}
+
+.pi img:hover{
+  box-shadow:10px 10px 10px 10px blue;
+}
+
+.strawberry{
+  margin-bottom: 5%;
+}
+
+.apple,.banana,.berry,.cherry,.grapes,.guvava,.mango,.melon,.orange,.peache,.pineapple,.strawberry{
+  display: flex;
+}
+
+.tick{
+  width: 25%;
+  height: 88px;
+  display: none;
+  border-radius: 50px;
+}
+
+.btn-2{
+  display: none;
+}
+
+.place-order div{
+  margin-left: 40%;
+  margin-bottom: 20px;
+  text-align: center;
+  width:15%;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'Architects Daughter',serif;
+}
+.btn-1{
+background: red;
+}
+
+.place-order h2{
+  font-size: 25px;
+  margin:0;
+  padding-top: 8px;
+}
+
+.place-order div:hover{
+  background-color: skyblue;
+}
+
+.main{
+  display: none;
+}
+
+.back-tab{
+  width:50px;
+  height: 50px;
+  display: inline;
+  position: absolute;
+}
+
+.back-tab img{
+  height:50px;
+  width:50px;
+}
+
+
+.greeting{
+  color: orange;
+  margin-left: 90%;
+}
